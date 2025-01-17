@@ -1,6 +1,6 @@
 # greysch.github.io
 [My main GitHub page](https://github.com/greysch)
-## $${\color{lightgreen}CTI.110 \space Lesson \space 1: \space Lab}$$
+## CTI.110 Lesson 1: Lab
 
 
 Hello, my name is Nick Schlarb or "Grey" (my middle name)!
