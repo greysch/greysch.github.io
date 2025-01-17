@@ -1,5 +1,5 @@
 # greysch.github.io
-https://github.com/greysch
+[My main GitHub page](https://github.com/greysch)
 ## CTI.110 Lesson 1: Lab
 
 
