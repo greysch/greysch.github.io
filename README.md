@@ -9,7 +9,6 @@ Hello, my name is Nick Schlarb or "Grey" (my middle name)!
 &nbsp;
 
 
-
 This is both my personal and school GitHub account.
 
 
