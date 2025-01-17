@@ -4,7 +4,7 @@
 
 
 Hello, my name is Nick Schlarb or "Grey" (my middle name)!
-- My email: ngschlarb@my.waketech.edu or schlarbgrey@gmail.com
+- My email: **ngschlarb@my.waketech.edu** or schlarbgrey@gmail.com
 
 &nbsp;
 
@@ -13,4 +13,4 @@ Hello, my name is Nick Schlarb or "Grey" (my middle name)!
 This is both my personal and school GitHub account.
 
 
-This repository will hold my school assignments for the 2025 CTI.110 class.
+This repository will hold my school assignments for the **2025 CTI.110 class**.
