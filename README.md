@@ -16,6 +16,7 @@ This repository will hold my school assignments for the **2025 CTI.110 class**.
 
 # About Me
 
+I was formerly a professional electrician, plumber, and carpenter. I decided to quit life in the trades to pursue my life-long hobby as an computer enthusiast and start acting upon the many software and app ideas I've saved over the years. So far, I'm loving the switch! I'm currently 28!
 ## My interests:
 
 * I'm mostly interested in self-improvement, gardening, hiking, foraging, exercise, reading, and most recently, **programming**.
