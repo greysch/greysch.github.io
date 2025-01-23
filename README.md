@@ -31,6 +31,7 @@ pie title My weighted interests
 "Exercise" : 20
 "Reading" : 10
 "Programming" : 20
+"EDM" : 8
 "RPG Games" : 6
 ```
 
