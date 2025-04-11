@@ -7,16 +7,15 @@
   <style>
     table {
       width: 100%;
-      border-collapse: collapse;
-      margin-top: 20px; /* Added padding above table */
+      border-collapse: separate; /* Allows border-radius to work */
       border-spacing: 0;
+      margin-top: 20px;
     }
 
     th, td {
       border: 1px solid #ddd;
       padding: 8px;
       text-align: left;
-      border-radius: 4px; /* Added rounded cell corners */
     }
 
     th {
@@ -24,19 +23,37 @@
     }
 
     tr:hover {
-      background-color: #e0f7fa; /* Added a light blue hover color */
+      background-color: #e0f7fa; /* Light blue on hover */
     }
 
     /* Centered and styled the heading */
     h1 {
       text-align: center;
       color: #2c3e50;
-      font-family: 'Sego UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    /* Rounded corners for outermost cells */
+    thead th:first-child {
+      border-top-left-radius: 6px;
+    }
+
+    thead th:last-child {
+      border-top-right-radius: 6px;
+    }
+
+    tbody tr:last-child td:first-child {
+      border-bottom-left-radius: 6px;
+    }
+
+    tbody tr:last-child td:last-child {
+      border-bottom-right-radius: 6px;
     }
   </style>
 </head>
 <body>
   <h1>Gradebook</h1>
+
   <table id="gradebook">
     <thead>
       <tr>
