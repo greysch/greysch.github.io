@@ -1,6 +1,6 @@
 # greysch.github.io
 [My main GitHub page](https://github.com/greysch)
-## CTI.110 Lesson 1: Lab
+## CTI.110 Work
 
 
 Hello, my name is Nick Schlarb or "Grey" (my middle name)!
