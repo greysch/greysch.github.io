@@ -6,49 +6,58 @@
   <title>Gradebook</title>
   <style>
     table {
-      width: 100%;
-      border-collapse: separate; /* Allows border-radius to work */
-      border-spacing: 0;
-      margin-top: 20px;
-    }
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin-top: 20px;
+}
 
-    th, td {
-      border: 1px solid #ddd;
-      padding: 8px;
-      text-align: left;
-    }
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
 
-    th {
-      background-color: #f4f4f4;
-    }
+th {
+  background-color: #f4f4f4;
+}
 
-    tr:hover {
-      background-color: #e0f7fa; /* Light blue on hover */
-    }
+tr:hover {
+  background-color: #e0f7fa;
+}
 
-    /* Centered and styled the heading */
-    h1 {
-      text-align: center;
-      color: #2c3e50;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
+h1 {
+  text-align: center;
+  color: #2c3e50;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
-    /* Rounded corners for outermost cells */
-    thead th:first-child {
-      border-top-left-radius: 6px;
-    }
+/* Rounded top corners */
+thead th:first-child {
+  border-top-left-radius: 8px;
+}
 
-    thead th:last-child {
-      border-top-right-radius: 6px;
-    }
+thead th:last-child {
+  border-top-right-radius: 8px;
+}
 
-    tbody tr:last-child td:first-child {
-      border-bottom-left-radius: 6px;
-    }
+/* Rounded bottom corners if no <tbody> rows yet */
+thead th:first-child {
+  border-bottom-left-radius: 8px;
+}
 
-    tbody tr:last-child td:last-child {
-      border-bottom-right-radius: 6px;
-    }
+thead th:last-child {
+  border-bottom-right-radius: 8px;
+}
+
+/* If I later add rows to <tbody>, use this instead */
+tbody tr:last-child td:first-child {
+  border-bottom-left-radius: 8px;
+}
+
+tbody tr:last-child td:last-child {
+  border-bottom-right-radius: 8px;
+}
   </style>
 </head>
 <body>
