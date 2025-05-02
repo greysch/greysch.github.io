@@ -28,27 +28,25 @@ router.get('/', function(req, res){
 
 app.use("/", router);
 
-router.get('/api/grades',function(req, res){
+router.get('/api/grades', function(req, res){
     pool.query(
-        `SELECT Students.student_id, first_name, last_name, AVG(assignments.grade) as total_grade \
-            FROM Students  \
-            LEFT JOIN Assignments ON Assignments.student_id = Students.student_id \
-            GROUP BY Students.student_id \
-            ORDER BY total_grade DESC`,
+        `SELECT Students.student_id, first_name, last_name,
+         AVG(Assignments.grade) AS total_grade
+         FROM Students
+         LEFT JOIN Assignments ON Assignments.student_id = Students.student_id
+         GROUP BY Students.student_id, first_name, last_name
+         ORDER BY total_grade DESC`,
         [],
-        function( err, result){
-            if(err)
-            {
+        function(err, result){
+            if(err) {
                 console.error(err);
+                res.status(500).json({ error: 'Database error' }); // send JSON error
+                return;
             }
-            
-            result.rows.forEach( 
-                    function(row){
-                        console.log(`Student Name: ${row.first_name} ${row.last_name}`);
-                        console.log(`Grade: ${row.total_grade}`);
-                    }
-            ); // End of forEach
-            
+            result.rows.forEach(function(row){
+                console.log(`Student Name: ${row.first_name} ${row.last_name}`);
+                console.log(`Grade: ${row.total_grade}`);
+            });
             res.status(200).json(result.rows);
         }
     );
